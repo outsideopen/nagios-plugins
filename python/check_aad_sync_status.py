@@ -7,7 +7,19 @@
 # Setup:
 #  pip install mechanize
 #
+# Usage:
+#   ./check_aad_sync_status.py -u username -p pasword
+#   ./check_aad_sync_status.py -F /path/to/file.cred
+#
+# Cred File format:
+#   username = username
+#   password = password
+#
+# It is recommended that you set your credential file to 600 (`chmod 600 /path/to/file.cred`) to
+# help prevent the credentials from being leaked.
+#
 # :author David Lundgren <dlundgren@syberisle.net>:
+# :author Sylvain Guibert (updated documentation):
 
 import sys
 import ConfigParser
